@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  > <!-- displays site properly based on user's device -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+  <script
+    src="https://kit.fontawesome.com/3a3235cf41.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="./css/style.css"
+  >
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__container">
+    <div class="logo">
+      <img
+        src="./images/logo.svg"
+        alt=""
+      >
+    </div>
+    <div class="nav">
+      <ul class="nav__links">
+        <a
+          href=""
+          class="nav__link"
+        >
+          <li class="nav__link-item"> Collections</li>
+        </a>
+        <a
+          href=""
+          class="nav__link"
+        >
+          <li class="nav__link-item"> Men</li>
+        </a>
+        <a
+          href=""
+          class="nav__link"
+        >
+          <li class="nav__link-item"> Women</li>
+        </a>
+        <a
+          href=""
+          class="nav__link"
+        >
+          <li class="nav__link-item"> About</li>
+        </a>
+        <a
+          href=""
+          class="nav__link"
+        >
+          <li class="nav__link-item"> Contact</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+    <div class="cart">
+      <button class="cart__icon-container"><img
+          class="cart__icon"
+          src="./images/icon-cart.svg"
+          alt=""
+        ></button>
+      <button class="cart__avatar-container"><img
+          src="./images/image-avatar.png"
+          alt=""
+          class="card__avatar"
+        ></button>
+    </div>
+  </div>
+  <hr class="line">
+  <div class="main">
+    <div class="photos__container">
+      <div class="photo__main-container">
+        <img class="photo__main"
+          src="./images/image-product-1.jpg"
+          alt=""
+        >
+      </div>
+      <div class="thumbnails">
+          <button class="thumbnail__container thumbnail__container-1  thumbnail__container-active">
+            <img class="thumbnail thumbnail__active"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+            >
+          </button>
+          <button class="thumbnail__container thumbnail__container-2">
+          <img class="thumbnail"
+            src="./images/image-product-2-thumbnail.jpg"
+            alt=""
+          >
+        </button>
+        <button class="thumbnail__container thumbnail__container-3">
+          <img class="thumbnail"
+            src="./images/image-product-3-thumbnail.jpg"
+            alt=""
+          >
+        </button>
+        <button class="thumbnail__container thumbnail__container-4">
+          <img class="thumbnail "
+            src="./images/image-product-4-thumbnail.jpg"
+            alt=""
+          >
+        </button>
+
+      </div>
+    </div>
+    <div class="product">
+      <h2 class="product__sub-header"> Sneaker Company</h2>
+      <h1 class="product__header">Fall Limited Edition Sneakers</h1>
+      <div class="product__description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+      <div class="discount__price-container">
+        <div class="discount__price">$125.00</div>
+        <div class="discount">50%</div>
+      </div>
+      <div class="original__price"> $250.00</div>
+      <div class="buttons__container">
+        <div class="amount__buttons-container">
+          <button class="amount__button amount__button-minus">-</button>
+          <div class="amount__number">0</div>
+          <button class="amount__button amount__button-plus">+</button>
+        </div>
+        <button class="add__button"><i class="fas fa-shopping-cart add__icon"></i>Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
