@@ -81,7 +81,7 @@ input, button, a {
 
 }
 
-.user__icon-container {
+.user__cart-container {
     height: 3rem;
     padding: 1rem 2rem;
     margin-top: 2rem;
@@ -256,6 +256,7 @@ z-index: 2;
     top: -48rem;
     z-index: 3;
     background-color: white;
+    display: none;
 }
 .cart__header {
    padding: 1rem;
