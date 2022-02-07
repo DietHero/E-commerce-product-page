@@ -121,7 +121,7 @@
           >
         </button>
         <button class="thumbnail__container thumbnail__container-4">
-          <img class="thumbnail "
+          <img class="thumbnail"
             src="./images/image-product-4-thumbnail.jpg"
             alt=""
           >
@@ -145,7 +145,7 @@
           <div class="amount__number">0</div>
           <button class="amount__button amount__button-plus">+</button>
         </div>
-        <button class="add__button"><i class="fas fa-shopping-cart add__icon"></i>Add to cart</button>
+        <button class="add__button" disabled><i class="fas fa-shopping-cart add__icon"></i>Add to cart</button>
       </div>
     </div>
   </div>
@@ -153,7 +153,23 @@
   <h4 class="cart__header">Cart</h4>
   <hr class="cart__line">
   <div class="cart__content">
-    <dic class="cart__empty"> <p class="cart__empty-text">Your card is empty</p> </dic>
+    <div class="cart__empty"> <p class="cart__empty-text">Your card is empty</p> </div>
+    <div class="cart__item">
+        <div class="cart__item-container">
+          <div class="cart__thumbnail-container"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="card__item-details">
+            <div class="card__item-header">Fall Limited Edition Sneakers</div>
+            <div class="card__price-container">
+              <div class="card__price-single">$125 x </div>
+              <div class="card__price-amount">0</div>
+              <div class="card__price-final"></div>
+            </div>
+          </div>
+          <button class="card__item-delete"><img src="./images/icon-delete.svg" alt=""></button>
+        </div>
+        <button class="checkout__button">Checkout</button>
+    </div>
+
 
   </div>
 </div>
