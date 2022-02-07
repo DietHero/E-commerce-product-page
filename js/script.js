@@ -9,8 +9,22 @@ const addToCart = document.querySelector('.add__button')
 const emptyCard = document.querySelector('.cart__empty')
 const itemInCard = document.querySelector('.cart__item')
 const buttonDelete = document.querySelector('.card__item-delete')
+const thumbnailContainer1 = document.querySelector('.thumbnail__container-1')
+const thumbnailContainer2 = document.querySelector('.thumbnail__container-2')
+const thumbnailContainer3 = document.querySelector('.thumbnail__container-3')
+const thumbnailContainer4 = document.querySelector('.thumbnail__container-4')
+const thumbnail1 = document.querySelector('.thumbnail-1')
+const thumbnail2 = document.querySelector('.thumbnail-2')
+const thumbnail3 = document.querySelector('.thumbnail-3')
+const thumbnail4 = document.querySelector('.thumbnail-4')
+const photoMain = document.querySelector('.photo__main')
 
 let amount = 0
+
+const countFinalPrice = function () {
+    let result = 125 * amount
+    finalPrice.innerHTML = '$' + result
+}
 
 cartIcon.addEventListener(
     'click',
@@ -69,11 +83,6 @@ addToCart.addEventListener(
 
 )
 
-const countFinalPrice = function () {
-    let result = 125 * amount
-    finalPrice.innerHTML = '$' + result
-}
-
 
 buttonDelete.addEventListener(
     'click',
@@ -83,5 +92,65 @@ buttonDelete.addEventListener(
         amount = 0
         amountContainer.innerText = amount
         amountContainerCard.innerText = amount
+        addToCart.disabled = true
+    }
+)
+thumbnailContainer1.addEventListener(
+    'click', 
+    () => {
+        thumbnailContainer1.classList.add("thumbnail__container-active")
+        thumbnailContainer2.classList.remove("thumbnail__container-active")
+        thumbnailContainer3.classList.remove("thumbnail__container-active")
+        thumbnailContainer4.classList.remove("thumbnail__container-active")
+        thumbnail1.classList.add("thumbnail__active")
+        thumbnail2.classList.remove("thumbnail__active")
+        thumbnail3.classList.remove("thumbnail__active")
+        thumbnail4.classList.remove("thumbnail__active")
+        photoMain.src = './images/image-product-1.jpg'
+    }
+)
+
+thumbnailContainer2.addEventListener(
+    'click', 
+    () => {
+        thumbnailContainer2.classList.add("thumbnail__container-active")
+        thumbnailContainer1.classList.remove("thumbnail__container-active")
+        thumbnailContainer3.classList.remove("thumbnail__container-active")
+        thumbnailContainer4.classList.remove("thumbnail__container-active")
+        thumbnail2.classList.add("thumbnail__active")
+        thumbnail1.classList.remove("thumbnail__active")
+        thumbnail3.classList.remove("thumbnail__active")
+        thumbnail4.classList.remove("thumbnail__active")
+        photoMain.src = './images/image-product-2.jpg'
+    }
+)
+
+thumbnailContainer3.addEventListener(
+    'click', 
+    () => {
+        thumbnailContainer3.classList.add("thumbnail__container-active")
+        thumbnailContainer1.classList.remove("thumbnail__container-active")
+        thumbnailContainer2.classList.remove("thumbnail__container-active")
+        thumbnailContainer4.classList.remove("thumbnail__container-active")
+        thumbnail3.classList.add("thumbnail__active")
+        thumbnail2.classList.remove("thumbnail__active")
+        thumbnail1.classList.remove("thumbnail__active")
+        thumbnail4.classList.remove("thumbnail__active")
+        photoMain.src = './images/image-product-3.jpg'
+    }
+)
+
+thumbnailContainer4.addEventListener(
+    'click', 
+    () => {
+        thumbnailContainer4.classList.add("thumbnail__container-active")
+        thumbnailContainer1.classList.remove("thumbnail__container-active")
+        thumbnailContainer3.classList.remove("thumbnail__container-active")
+        thumbnailContainer2.classList.remove("thumbnail__container-active")
+        thumbnail4.classList.add("thumbnail__active")
+        thumbnail2.classList.remove("thumbnail__active")
+        thumbnail3.classList.remove("thumbnail__active")
+        thumbnail1.classList.remove("thumbnail__active")
+        photoMain.src = './images/image-product-4.jpg'
     }
 )
