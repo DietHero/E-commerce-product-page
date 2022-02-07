@@ -95,12 +95,12 @@
   <hr class="line">
   <div class="main">
     <div class="photos__container">
-      <div class="photo__main-container">
+      <button class="photo__main-container">
         <img class="photo__main"
           src="./images/image-product-1.jpg"
           alt=""
         >
-      </div>
+      </button>
       <div class="thumbnails">
           <button class="thumbnail__container thumbnail__container-1  thumbnail__container-active">
             <img class="thumbnail thumbnail-1 thumbnail__active"
@@ -173,6 +173,48 @@
 
   </div>
 </div>
+<div class="lightBox">
+  <div class="lightBox__exit"><i class="fas fa-times"></i></div>
+  <div class="lightBox__main">
+<button class="lightBox__button-left lightBox__button"><i class="fas fa-chevron-left"></i></button>
+    <div class="photo__main-container">
+      <img class="photo__main"
+        src="./images/image-product-1.jpg"
+        alt=""
+      >
+    </div>
+    <button class="lightBox__button-right lightBox__button"> <i class="fas fa-chevron-right"></i></button>
+  </div>
+ 
+<div class="thumbnails lightBox__thumbnails ">
+  <button class="thumbnail__container thumbnailBox__container-1  thumbnail__container-active">
+    <img class="thumbnail thumbnailBox-1 thumbnail__active"
+      src="./images/image-product-1-thumbnail.jpg"
+      alt=""
+    >
+  </button>
+  <button class="thumbnail__container thumbnailBox__container-2">
+  <img class="thumbnail thumbnailBox-2"
+    src="./images/image-product-2-thumbnail.jpg"
+    alt=""
+  >
+</button>
+<button class="thumbnail__container thumbnailBox__container-3">
+  <img class="thumbnail thumbnailBox-3"
+    src="./images/image-product-3-thumbnail.jpg"
+    alt=""
+  >
+</button>
+<button class="thumbnail__container thumbnailBox__container-4">
+  <img class="thumbnail thumbnailBox-4"
+    src="./images/image-product-4-thumbnail.jpg"
+    alt=""
+  >
+</button>
+</div>
+
+</div>
+<div class="overlay"></div>
 <script src="./js/script.js"></script>
 </body>
 
