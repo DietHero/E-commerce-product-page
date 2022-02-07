@@ -45,6 +45,7 @@ input, button, a {
     display: flex;
     justify-content: space-between;
     margin: 1rem 6rem;
+    z-index: 2;
 }
 
 .header__container {
@@ -69,27 +70,27 @@ input, button, a {
 
 }
 
-.cart {
+.user {
     display: flex;
 }
 
-.cart__avatar-container {
+.user__avatar-container {
     height:5rem;
     width: 5rem;
     margin: 1rem;
 
 }
 
-.cart__icon-container {
+.user__icon-container {
     height: 3rem;
     padding: 1rem 2rem;
     margin-top: 2rem;
 }
 
-.card__avatar {
+.user__avatar {
     border-radius: 4rem;
 }
-.card__avatar:hover {
+.user__avatar:hover {
     border: 0.25rem solid hsl(26, 100%, 55%);
 }
 
@@ -97,6 +98,7 @@ input, button, a {
     margin: 0 6rem;
     transform: translate(0, -3rem);
 opacity: 50%;
+z-index: 2;
 }
 
 .main {
@@ -241,4 +243,37 @@ opacity: 50%;
 
 .add__icon {
     margin-right: 2rem;
+}
+
+.cart {
+    width: 20rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem  1rem hsl(223, 64%, 98%);;
+    margin: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 55rem;
+    top: -48rem;
+    z-index: 3;
+    background-color: white;
+}
+.cart__header {
+   padding: 1rem;
+   font-size: 18px;
+}
+
+.cart__empty {
+    text-align: center;
+    margin: 1rem;
+ 
+}
+
+.cart__empty-text {
+font-weight: 700;
+color: hsl(219, 9%, 45%);
+}
+
+.cart__line {
+    opacity: 50%;
+    color: hsl(219, 9%, 45%);
 }
