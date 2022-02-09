@@ -396,16 +396,16 @@ input, button, a {
 .lightBox__button-right {
     position: relative;
     top: 15rem;
-    right: 1.5rem;
+    right: 1rem;
 
 }
 
 .lightBox__button-left {
     position: relative;
     top: 15rem;
-    left: 1.5rem;
+    left: 1rem;
 }
 
 .lightBox__thumbnails {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }

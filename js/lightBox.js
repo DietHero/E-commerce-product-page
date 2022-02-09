@@ -21,5 +21,3 @@ lightBoxExit.addEventListener(
     }
 )
 
-
-
